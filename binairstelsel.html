@@ -1,28 +1,52 @@
-
-<!DOCTYPE html> <!--dit is de homepage van mijn website-->
-<html> <!--Dit is het html-element -->
+<!DOCTYPE html> <!--Dit is het HTML gedeelte van de code-->
+<html>
     <head>
-        <title>Binair stelsel</title>
-        <meta charset="utf-8"
+        <title> Binairstelsel </title>
+        <link rel="stylesheet" type="text/css" href="layout.css">
+        <meta charset="utf-8">
     </head>
-    <body>
-        Uitleg over het binaire stelsel
+    <body id="body2">
+        <div class="header">
+            <h1> Binairstelsel </h1>
+        </div>
 
-        <a href="index.html">home</a> <!--Link terug naar de homepage-->
+
+        <ul>
+            <li><a href="index.html"> Home </a></li> <!--Dit is om te laten zien dat je actief bent op deze specifieke pagina-->
+            <li><a href="binairstelsel.html" class="active"> Binairstelsel </a></li> <!--Dit is voor het menu zodat je naar andere pagina's kunt-->
+            <li><a href="kleurmodellen.html"> Kleurmodellen </a></li> <!--Dit is voor het menu zodat je naar andere pagina's kunt-->
+            <li><a href="moederbord.html"> Moederbord</a></li>
+            <li class="dropdownbutton"><a href="3-lagenmodel.html" class="dropdownbutton"> 3-lagenmodel</a>
+             
+                <ul class="dropdownmenu">
+                    <li><a href="Fysiekelaag.html"> Fysiekelaag</a></li>
+                    <li><a href="logischelaag.html"> Logische laag</a></li>
+                    <li><a href="toepassingslaag.html"> Toepassingslaag </a></li>
+                 </ul>
+                </li> 
+
+        </ul>
+        
+            <h1 class="tekstkleur"> Het Binairstelsel</h1>
+
+            <article>
+                <h2 class="tekstkleur"> Wat is het binairstelsel? </h2>
+                <p class="tekstkleur"> Het binairstelsel is een stelsel dat bestaat uit nullen en eenen elk cijfer word een "Bit" genoemd of "Byte" in het Engels.</p>
+
+                <h2 class="tekstkleur"> Hoe werkt het binaire stelsel?</h2>
+                <p class="tekstkleur"> Het binaire stelsel bestaat dus uit "0" en "1", maar hoe werkt het nou eigenlijk dat ga ik je in iedergeval uitleggen in deze paragraaf!
+                    Je telt via "vakjes" 01 = 0x2 en 1x1 = 1 uiteindelijk en 10 is dan 1x2 + 0x1 = 2. Elke stap in het binaire stelsel dus de 1, 10, 100 of 1000 word verdubbeld dus 1 -> 2 -> 4 -> 8 -> 16 en zo verder.
+                    Er is ook een spelletje om deze manier van rekenen te beoefenen die staat onderaan deze pagina genaamd Binary Bonanza! 
+                    <img src="uitleg binair stelsel.png" alt="Foto Binairstelsel" style="float:right;width:420px;height:420px;">  <!--Dit is voor een foto op de pagina aan de rechterkant-->
+                </p>
+                
+                
+                <h2 class="tekstkleur"> Waarvoor word het binaire stelsel gebruikt?</h3>
+                <p class="tekstkleur"> Het binaire stelsel word onder andere gebruikt om tekst of andere vormen van communicatie door te geven aan een computer, maar het kan ook gebruikt worden 
+                                        om bijvoorbeeld te coderen of te rekenen. Maar het binaire stelsel word vooral gebruik om een progamma op een computer te lezen. </p>
+            </article>
+
+            <iframe src="https://games.penjee.com/binary-bonanza/game.php" width="700" height="500" frameborder="no" scrolling="no" ></iframe> <!--Dit zorgt ervoor dat je een spel kan spelen op de pagina-->
+               
     </body>
-        <body>
-            <br>Hier hoort een enter te komen
-            
-            <br>
-
-        
-            
-            <br>
-        
-
-            <a href="https://games.penjee.com/binary-bonanza/">Binary Bonanza</a> 
-            
-            
-
-         </body>
 </html>

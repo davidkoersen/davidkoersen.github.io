@@ -1,21 +1,46 @@
-
-<!DOCTYPE html> <!--dit is de homepage van mijn website-->
-<html> <!--Dit is het html-element -->
-    <head>
-        <title>Het eerste begin</title>
-        <meta charset="utf-8"
-    </head>
-    <body>
-       
-        <ul
-        Hier komt mijn eerste tekst
+<!DOCTYPE html> <!--Dit is het HTML gedeelte van de code-->
+<html>
     
-        <a href="binairstelsel.html">Uitleg Binair Stelsel</a>
-   
+    <head>
+        <title> Home </title> <!--Ditr is voor de titel bovenaan de pagina-->
+        <link rel="stylesheet" type="text/css" href="layout.css"> <!--Dit legt de link tussen de layout en de pagina-->
+        <meta charset="utf-8">
+    </head>
+    
+    <body id="body1"> 
+        
+        <div class="header">
+            <h1> Home </h1>
+        </div>
+           
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active"> Home </a></li> <!--Dit is om te laten zien dat je actief bent op deze specifieke pagina-->
+                <li><a href="binairstelsel.html"> Binairstelsel </a></li> <!--Dit is voor het menu zodat je naar andere pagina's kunt-->
+                <li><a href="kleurmodellen.html"> Kleurmodellen </a></li> <!--Dit is voor het menu zodat je naar andere pagina's kunt-->
+                <li><a href="moederbord.html" >Moederbord</a></li>
+                <li class="dropdownbutton"><a href="3-lagenmodel.html" class="dropdownbutton">3-lagenmodel</a>
+                 
+                    <ul class="dropdownmenu">
+                        <li><a href="Fysiekelaag.html">Fysiekelaag</a></li>
+                        <li><a href="logischelaag.html">Logische laag</a></li>
+                        <li><a href="toepassingslaag.html">Toepassingslaag </a></li>
+                     </ul>
+                    </li> 
 
-        <a href="kleurenstelsel.html">Uitleg Kleurenstelsel</a>
-        <ul
+            </ul>
 
+        </nav>
+
+        <h1 class="tekstkleur"> Informatica </h1> <!--Dit is de titel-->
+        <main>
+            <p class="tekstkleur"> Welkom op onze website over Informatica! We behandelen op onze website de volgende onderwerpen die te maken hebben met Informatica,
+                 namelijk: het binairstelsel en de kleurmodellen. Deze website is geschreven in de code HTML en CSS. </p> <!--Dit projecteerd de tekst op de pagina-->
+        </main>
+
+        <footer>
+            <p class="tekstkleur"> Deze website is gemaakt door Yassir Boufares en David Koersen </p> <!--Dit is de footer om te laten zien wie de website heeft gemaakt-->
+        </footer>
 
     </body>
 </html>

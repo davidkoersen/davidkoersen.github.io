@@ -1,1 +1,84 @@
-
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+  }
+  
+  /* De stijlen voor de hoofdlijstitems */
+  li {
+    float: left;
+    border-right: 1px solid rgb(145, 145, 145);
+    position: relative; /* Dit is toegevoegd voor het positioneren van de dropdown */
+  }
+  
+  li:last-child {
+    border-right: none;
+  }
+  
+  /* De stijlen voor de links in de hoofdlijst */
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none;
+  }
+  
+  /* Stijlen voor de hover-status van de links in de hoofdlijst */
+  li a:hover:not(.active) {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  /* Stijlen voor de actieve link in de hoofdlijst */
+  .active {
+    background-color: #04AA6D;
+    color: aliceblue;
+  }
+  
+  /* Stijlen voor de dropdownknop */
+  .dropdownbutton {
+    position: relative;
+  }
+  
+  /* Stijlen voor de dropdowninhoud */
+  .dropdownmenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Stijlen voor de links in de dropdowninhoud */
+  .dropdownmenu a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+    text-align: left;
+  }
+  
+  /* Stijlen voor de hover-status van de links in de dropdowninhoud */
+  .dropdownmenu a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Toon de dropdowninhoud wanneer de knop wordt gehoverd (gemouse-overd) */
+  .dropdownbutton:hover .dropdownmenu {
+    display: block;
+  }
+  
+  /* Overige stijlen voor de header en de body van de pagina blijven ongewijzigd */
+  
+  .header {
+    background-color: #727272;
+    color: rgb(254, 254, 255);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  body {
+    background-image: url(matrixachtergrond.png);
+  }
