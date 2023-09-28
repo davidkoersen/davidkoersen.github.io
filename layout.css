@@ -40,6 +40,14 @@ ul {
   .dropdownbutton {
     position: relative;
   }
+
+  .footer {
+    background-color:rgb(0, 0, 0);
+    padding: 3px;
+    color: white;
+    text-align: center;
+ }
+
   
   /* Stijlen voor de dropdowninhoud */
   .dropdownmenu {
